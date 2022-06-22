@@ -19,7 +19,11 @@ const Buy = ({ currentUser }) => {
           <div className="powers">
             {[20, 45, 70, 100].map((item, i) => {
               return (
-                <div className="power" style={{ height: `${60 * (i + 5)}px` }}>
+                <div
+                  className="power"
+                  style={{ height: `${60 * (i + 5)}px` }}
+                  key={i}
+                >
                   <div>
                     <h1>{item}</h1>
                     <p>Votes</p>

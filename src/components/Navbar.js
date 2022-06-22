@@ -15,10 +15,12 @@ const Navbar = ({ currentUser }) => {
   return (
     <>
       <div className="navbar" data-visible="false">
-        <div className="logo flex-column">
-          <img src="\images\Group 21.png" alt="" />
-          <h3 className="heading-logo">THE CONNECTED AWARDS</h3>
-        </div>
+        <Link to="/">
+          <div className="logo flex-column">
+            <img src="\images\Group 21.png" alt="" />
+            <h3 className="heading-logo">THE CONNECTED AWARDS</h3>
+          </div>
+        </Link>
 
         <ul className="nav flex">
           <li>
