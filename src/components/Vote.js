@@ -5,7 +5,7 @@ import { useState } from "react";
 import Feedback from "./Feedback";
 import { Link } from "react-router-dom";
 
-const Vote = ({ text }) => {
+const Vote = ({ text, currentUser }) => {
   const [counter, setCounter] = useState(0);
   const [state, setState] = useState(false);
   const handleClick = function () {
@@ -13,7 +13,7 @@ const Vote = ({ text }) => {
   };
   return (
     <div className="vote-page">
-      <Navbar />
+      <Navbar currentUser={currentUser} />
       <h1>{text}</h1>
       <Search />
       <p>

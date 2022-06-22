@@ -1,4 +1,5 @@
 import React from "react";
+import { Link } from "react-router-dom";
 import Button from "./Button";
 import Footer from "./Footer";
 import Navbar from "./Navbar";
@@ -60,7 +61,9 @@ const Grid = () => {
             more-or-less normal distribution of letters, as opposed to using
             'Content here, content here', making it look like readable English.
           </p>
-          <Button text="Learn More" />
+          <Link to="/about">
+            <Button text="Learn More" />
+          </Link>
         </div>
         <img src="images\Group 21.png" alt="" className="first" />
       </div>
@@ -74,7 +77,9 @@ const Grid = () => {
             more-or-less normal distribution of letters, as opposed to using
             'Content here, content here', making it look like readable English.
           </p>
-          <Button text="Read More" />
+          <Link to="/past">
+            <Button text="Read More" />
+          </Link>
         </div>
         <div className="grid">
           <img src="images\WhatsApp Image 2022-02-10 at 10.39 1.png" alt="" />

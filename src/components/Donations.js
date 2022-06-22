@@ -9,7 +9,7 @@ const Donations = () => {
       <p>Make a contribution to the growth of technology in Africa</p>
       <div className="flex">
         <div className="flex-column">
-          <img src="" alt="" />
+          <img src="images\WhatsApp Image 2022-02-12 at 11.26 1.png" alt="" />
           <p>
             Lorem Ipsum is simply dummy text of the printing and typesetting
             industry. Lorem Ipsum has been the industry's standard dummy text
@@ -43,7 +43,7 @@ const Donations = () => {
             and more recently with desktop publishing software like Aldus
             PageMaker including versions of Lorem Ipsum.
           </p>
-          <img src="" alt="" />
+          <img src="images\TUTN (notebook) 2.png" alt="" />
         </div>
       </div>
     </div>

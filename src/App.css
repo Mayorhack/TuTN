@@ -660,6 +660,7 @@ select {
   justify-content: space-between;
   align-items: center;
   padding: 50px;
+  margin: 20px 2px;
 }
 .future .header,
 .past .header,
