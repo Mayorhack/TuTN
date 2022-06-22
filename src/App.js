@@ -1,24 +1,70 @@
-import logo from './logo.svg';
-import './App.css';
+import { useState } from "react";
+import "./App.css";
+import Home from "./components/Home";
+import { BrowserRouter as Router, Route, Routes } from "react-router-dom";
+import Register from "./components/Register";
+import Login from "./components/Login";
+import About from "./components/About";
+import Categories from "./components/Categories";
+import Vote from "./components/Vote";
+import Buy from "./components/Buy";
+import Future from "./components/Future";
+import Past from "./components/Past";
 
 function App() {
+  const [user, setUser] = useState([]);
+  const handleClick = (info) => {
+    setUser((prev) => {
+      return [...prev, info];
+    });
+  };
+  const [stackData, setStackData] = useState("");
+  const getStack = function (stack) {
+    setStackData(stack);
+  };
+  const [currentUser, setCurrentUser] = useState("Mayowa");
+  const handleLogin = function (email) {
+    setCurrentUser(`${user[0].firstname} ${user[0].lastname}`);
+  };
   return (
-    <div className="App">
-      <header className="App-header">
-        <img src={logo} className="App-logo" alt="logo" />
-        <p>
-          Edit <code>src/App.js</code> and save to reload.
-        </p>
-        <a
-          className="App-link"
-          href="https://reactjs.org"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          Learn React
-        </a>
-      </header>
-    </div>
+    <Router>
+      <div className="App">
+        <Routes>
+          <Route exact path="/" element={<Home />}></Route>
+          <Route
+            path="/register"
+            element={<Register onclick={handleClick} />}
+          ></Route>
+          <Route
+            path="/login"
+            element={<Login user={user} oncorrect={handleLogin} />}
+          ></Route>
+          <Route path="/about" element={<About />}></Route>
+          <Route
+            path="/categories"
+            element={
+              <Categories onclick={getStack} currentUser={currentUser} />
+            }
+          ></Route>
+          <Route
+            path="/vote"
+            element={<Vote text={stackData} currentUser={currentUser} />}
+          ></Route>
+          <Route
+            path="/buy"
+            element={<Buy currentUser={currentUser} />}
+          ></Route>
+          <Route
+            path="/future"
+            element={<Future currentUser={currentUser} />}
+          ></Route>
+          <Route
+            path="/past"
+            element={<Past currentUser={currentUser} />}
+          ></Route>
+        </Routes>
+      </div>
+    </Router>
   );
 }
 
