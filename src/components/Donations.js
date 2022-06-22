@@ -1,10 +1,10 @@
 import React from "react";
 import Navbar from "./Navbar";
 
-const Donations = () => {
+const Donations = ({ currentUser }) => {
   return (
     <div className="donations">
-      <Navbar />
+      <Navbar currentUser={currentUser} />
       <h1 className="header">Make a Donation</h1>
       <p>Make a contribution to the growth of technology in Africa</p>
       <div className="flex">

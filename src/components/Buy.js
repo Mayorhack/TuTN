@@ -3,7 +3,7 @@ import Navbar from "./Navbar";
 import Button from "./Button";
 import Feedback from "./Feedback";
 
-const Buy = () => {
+const Buy = ({ currentUser }) => {
   const [state, setState] = useState(false);
   const handleClick = function () {
     setState(false);
@@ -11,7 +11,7 @@ const Buy = () => {
   const buttonClick = () => setState(true);
   return (
     <>
-      <Navbar />
+      <Navbar currentUser={currentUser} />
       <div className="buy">
         <div className="tab">
           <h1>Increase Your Voting Power</h1>

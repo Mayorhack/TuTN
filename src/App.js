@@ -10,6 +10,7 @@ import Vote from "./components/Vote";
 import Buy from "./components/Buy";
 import Future from "./components/Future";
 import Past from "./components/Past";
+import Donations from "./components/Donations";
 
 function App() {
   const [user, setUser] = useState([]);
@@ -61,6 +62,10 @@ function App() {
           <Route
             path="/past"
             element={<Past currentUser={currentUser} />}
+          ></Route>
+          <Route
+            path="/donations"
+            element={<Donations currentUser={currentUser} />}
           ></Route>
         </Routes>
       </div>

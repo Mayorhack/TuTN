@@ -1,10 +1,10 @@
 import React from "react";
 import Navbar from "./Navbar";
 
-const Past = () => {
+const Past = ({ currentUser }) => {
   return (
     <div className="past">
-      <Navbar />
+      <Navbar currentUser={currentUser} />
       <h1 className="header">Celebrated Techies</h1>
       <p>A look into some of our past winners</p>
       <div className="editions flex">

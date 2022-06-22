@@ -2,10 +2,10 @@ import React from "react";
 import Button from "./Button";
 import Navbar from "./Navbar";
 
-const Future = () => {
+const Future = ({ currentUser }) => {
   return (
     <div className="future">
-      <Navbar />
+      <Navbar currentUser={currentUser} />
       <h1 className="header">Future Editions</h1>
       <p>Nominate candidates for future editions</p>
       <div className="editions flex">
