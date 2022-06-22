@@ -25,16 +25,16 @@ const Navbar = ({ currentUser }) => {
             <Link to="/categories">Categories</Link>
           </li>
           <li>
-            <a href="">Past Editions</a>
+            <Link to="/past">Past Editions</Link>
           </li>
           <li>
-            <a href="">Future editions</a>
+            <Link to="/future">Future editions</Link>
           </li>
           <li>
             <Link to="/about">About Us</Link>
           </li>
           <li>
-            <a href="">Make a Donation</a>
+            <Link to="/donations">Make a Donation</Link>
           </li>
         </ul>
         <ul className="account flex">
