@@ -11,7 +11,7 @@ const Header = () => {
       <h1>First Ever Tech Personality Award For Africans in Europe</h1>
       <Search />
       <div className="categories-link">
-        <a href="">View all categories &rarr;</a>
+        <Link to="/categories">View all categories &rarr;</Link>
       </div>
     </div>
   );
