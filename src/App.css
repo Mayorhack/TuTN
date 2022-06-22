@@ -616,6 +616,11 @@ select {
 
   color: #0c0114;
 }
+.flex-donations {
+  display: flex;
+  justify-content: space-between;
+  align-items: flex-start;
+}
 #one,
 #two {
   position: absolute;

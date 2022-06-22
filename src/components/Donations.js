@@ -7,7 +7,7 @@ const Donations = ({ currentUser }) => {
       <Navbar currentUser={currentUser} />
       <h1 className="header">Make a Donation</h1>
       <p>Make a contribution to the growth of technology in Africa</p>
-      <div className="flex">
+      <div className="flex-donations">
         <div className="flex-column">
           <img src="images\WhatsApp Image 2022-02-12 at 11.26 1.png" alt="" />
           <p>
