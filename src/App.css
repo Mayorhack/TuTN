@@ -759,6 +759,9 @@ select {
   .mobilelogo {
     display: block;
   }
+  .header h1 {
+    font-size: 32px;
+  }
   .navbar {
     position: fixed;
     inset: 0;
