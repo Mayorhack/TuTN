@@ -859,7 +859,7 @@ select {
     width: 100%;
   }
   .searchbar input {
-    width: 250px;
+    width: 220px;
     font-size: 1.3rem;
   }
   .target {
@@ -972,6 +972,7 @@ select {
   .stack {
     width: 183px;
     aspect-ratio: 1;
+    justify-content:center;
   }
   .vote {
     width: 382px;
