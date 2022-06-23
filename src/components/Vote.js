@@ -14,7 +14,7 @@ const Vote = ({ text, currentUser }) => {
   return (
     <div className="vote-page">
       <Navbar currentUser={currentUser} />
-      <h1>{text}</h1>
+      <h1 className="header">{text}</h1>
       <Search />
       <p>
         You have{" "}

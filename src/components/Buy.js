@@ -14,7 +14,7 @@ const Buy = ({ currentUser }) => {
       <Navbar currentUser={currentUser} />
       <div className="buy">
         <div className="tab">
-          <h1>Increase Your Voting Power</h1>
+          <h1 className="header">Increase Your Voting Power</h1>
           <p>Cheer Your Favourite Nominee to Success</p>
           <div className="powers">
             {[20, 45, 70, 100].map((item, i) => {

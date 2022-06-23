@@ -4,7 +4,7 @@ import { BiMenu } from "react-icons/bi";
 import { FaTimes } from "react-icons/fa";
 
 const Navbar = ({ currentUser }) => {
-  const [openMenu, setOpenMenu] = useState(false);
+  const [openMenu, setOpenMenu] = useState(true);
   const handleClick = function (e) {
     e.target.closest(
       ".menu"
