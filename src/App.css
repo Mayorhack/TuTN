@@ -760,7 +760,8 @@ select {
     display: block;
   }
   .header h1 {
-    font-size: 32px;
+    font-size: 24px;
+    padding: 6px;
   }
   .navbar {
     position: fixed;

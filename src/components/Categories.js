@@ -31,7 +31,7 @@ const Categories = ({ onclick, currentUser }) => {
   return (
     <div className="categories">
       <Navbar currentUser={currentUser} />
-      <h1>Voting Categories</h1>
+      <h1 className="header">Voting Categories</h1>
       <Search />
       <div className="stacks">
         {stack.map((stac, i) => (

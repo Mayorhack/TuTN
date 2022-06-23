@@ -7,7 +7,7 @@ import Search from "./Search";
 
 const Header = () => {
   return (
-    <div className="header flex-column" style={{ padding: "20px" }}>
+    <div className="header flex-column" style={{}}>
       <h1>First Ever Tech Personality Award For Africans in Europe</h1>
       <Search />
       <div className="categories-link">
