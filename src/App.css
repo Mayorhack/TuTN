@@ -760,7 +760,7 @@ select {
     display: block;
   }
   .header h1 {
-    font-size: 24px;
+    font-size: 32px;
     padding: 6px;
   }
   .navbar {
@@ -859,7 +859,7 @@ select {
     width: 100%;
   }
   .searchbar input {
-    width: 250px;
+    width: 220px;
     font-size: 1.3rem;
   }
   .target {
@@ -969,10 +969,13 @@ select {
     gap: 16px;
     font-size: 16px;
   }
-  .stack {
+  .categories .stack {
     width: 183px;
     aspect-ratio: 1;
+    justify-content:center;
+    align-items:center;
   }
+  .categories p{font-size:18px;}
   .vote {
     width: 382px;
     aspect-ratio: 1;
